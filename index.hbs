@@ -34,9 +34,11 @@ into the {body} of the default.hbs template --}}
     {{#if @custom.use_custom_cta}}
       <a href="{{@custom.custom_cta_url}}" class="m-button filled">{{@custom.custom_cta_text}}</a>
     {{else}}
+      {{!--
       {{#if @site.members_enabled}}
         <a href="{{@site.url}}/newsletter" class="m-button filled js-newsletter">{{t "Subscribe"}}</a>
       {{/if}}
+      --}}
     {{/if}}
   </div>
   </section>
